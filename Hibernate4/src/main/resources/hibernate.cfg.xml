@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- hive server1
+           <property name="hibernate.connection.url">jdbc:transwarp://172.18.251.105/aml</property>
+           <property name="hibernate.connection.driver_class">org.apache.hadoop.hive.jdbc.HiveDriver</property>
+           -->
+        <property name="hibernate.connection.url">jdbc:hive2://172.16.2.64:10000/tanliming</property>
+        <!-- property name="hibernate.connection.url">jdbc:hive2://172.16.2.98:10000/default;principal=hive/transwarp-9@TDH;kuser=hive;keytab=E://hive.keytab;authentication=kerberos;krb5conf=E://krb5.conf</property-->
+        <property name="hibernate.connection.driver_class">org.apache.hive.jdbc.HiveDriver</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">123456</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.temp.use_jdbc_metadata_defaults">false</property>
+        <mapping resource="User.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

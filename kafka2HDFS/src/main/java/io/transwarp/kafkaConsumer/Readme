@@ -1,0 +1,46 @@
+1.创建相关topic
+./kafka-topics.sh --create --zookeeper tdh-21:2181,tdh-22:2181,tdh-23:2181 --topic kafka1st --partitions 1 --replication-factor 1
+
+./kafka-topics.sh --create --zookeeper tdh-81:2181,tdh-82:2181,tdh-83:2181 --topic kafka1st --partitions 1 --replication-factor 1
+
+
+2.后台prodeucr/consumer消费命令
+
+
+./kafka-console-producer.sh --broker-list 172.16.140.21:9092,172.16.140.22:9092,172.16.140.23:9092 --topic kafka1st
+./kafka-console-producer.sh --broker-list tdh-81:9092,tdh-82:9092,tdh-83:9092 --topic kafka1st
+
+./kafka-console-consumer.sh --zookeeper 172.16.140.21:2181,172.16.140.22:2181,172.16.140.23:2181 --from-beginning --topic kafka1st
+./kafka-console-consumer.sh --zookeeper 172.16.140.81:2181,172.16.140.82:2181,172.16.140.83:2181 --from-beginning --topic kafka1st
+
+
+3.程序中未设置接入用户，所以可以自己将目录权限直接改成开放
+hadoop fs -chmod -R 777 /tmp/kafkatest
+
+4.Consumer方法实现的是简单的消费
+5.kafkatest方法实现的是kafka数据接收并发送到hdfs（not spark）
+6.sparkkafkademo方法实现的是kafka数据接收并发送到hdfs
+
+
+
+开放安全后
+
+1.拉取集群配置，新下载TDH_Client,从conf目录中取出来core-site.xml,hdfs-site.xml,放到自己的resources目录下
+2.从集群/etc/kakfa1/conf中copy一份keytab文件出来放在windows目录下(程序指定路径)，
+将krb5.conf文件取出来放在windows的C:/windows/下,并改名为krb5.ini
+
+
+3.集群内部操作：
+设置运行的环境变量： export KAFKA_OPTS="-Djava.security.auth.login.config=/etc/kafka1/conf/jaas.conf"
+
+使用Container中的producer.properties文件，里面几个重要的参数, consumer.properties同理
+bootstrap.servers=host1:9092
+sasl.mechanism=GSSAPI
+security.protocol=SASL_PLAINTEXT
+sasl.kerberos.service.name=kafka
+
+producer命令行
+~/install/TDH-Client/kafka/bin/kafka-console-producer.sh --broker-list tdh-81:9092 --producer.config /etc/kafka1/conf/producer.properties --topic kafka1st
+consumer  命令行
+~/install/TDH-Client/kafka/bin/kafka-console-consumer.sh --bootstrap-server tdh-81:9092 --consumer.config /etc/kafka1/conf/producer.properties --topic kafka1st --from-beginning
+4.demo中安全部分解注即可运行

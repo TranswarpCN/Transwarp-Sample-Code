@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="test/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>zk_connect</name>
+        <!-- 开启了kerberos用hostname，不要用ip -->
+        <!--<value>172.16.140.24:2181,172.16.140.25:2181,172.16.140.26:2181</value>-->
+        <value>tdh-24:2181,tdh-25:2181,tdh-26:2181</value>
+    </property>
+
+    <property>
+        <name>bootstrap_servers</name>
+        <value>tdh-24:2181,tdh-25:2181,tdh-26:2181</value>
+    </property>
+    <property>
+        <name>group_id</name>
+        <value>group_tan</value>
+    </property>
+    <property>
+        <name>topic</name>
+        <value>kafak1st</value>
+    </property>
+    <property>
+        <name>thread_pool_size</name>
+        <!-- 线程池大小 -->
+        <value>4</value>
+    </property>
+    <property>
+        <name>thread_num</name>
+        <!-- 线程数量 -->
+        <value>1</value>
+    </property>
+    <property>
+        <name>open_kerberos</name>
+        <!-- 是否开启kerberos ，这个参数在5.0废置-->
+        <value>false</value>
+    </property>
+    <property>
+        <name>kerberos_user</name>
+        <!-- kerberos用户 -->
+        <value>kafka</value>
+    </property>
+    <property>
+        <name>keytab</name>
+        <!-- kerberos用户kafka的keytab的绝对路径，注意一定要写\\而不是\ -->
+        <value>E:\\kafka.keytab</value>
+    </property>
+</configuration>

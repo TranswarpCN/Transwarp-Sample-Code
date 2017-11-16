@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="test/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>metadata_broker_list</name>
+        <!-- 开启了kerberos用hostname，不要用ip -->
+        <value>poc-1:9092,poc-2:9092,poc-3:9092,poc-4:9092</value>
+    </property>
+    <property>
+        <name>serializer_class</name>
+        <value>kafka.serializer.StringEncoder</value>
+    </property>
+    <property>
+        <name>key_serializer_class</name>
+        <value>kafka.serializer.StringEncoder</value>
+    </property>
+    <property>
+        <name>request_required_acks</name>
+        <value>1</value>
+    </property>
+    <property>
+        <name>topic_name</name>
+        <value>kafka1st</value>
+    </property>
+    <property>
+        <name>thread_pool_size</name>
+        <!-- 线程池大小 -->
+        <value>4</value>
+    </property>
+    <property>
+        <name>thread_num</name>
+        <!-- 线程数量 -->
+        <value>3</value>
+    </property>
+    <property>
+        <name>file_folders</name>
+        <!-- 填写根目录即可，会把子目录文件也读进去；根目录间按；分隔 -->
+        <value>D:\星环\output</value>
+    </property>
+    <property>
+        <name>batch_size</name>
+        <!-- 批量插入kafka行数 -->
+        <value>100</value>
+    </property>
+    <property>
+        <name>open_kerberos</name>
+        <!-- 是否开启kerberos -->
+        <value>false</value>
+    </property>
+    <property>
+        <name>kerberos_user</name>
+        <!-- kerberos用户 -->
+        <value>kafka</value>
+    </property>
+    <property>
+        <name>keytab</name>
+        <!-- kerberos用户kafka的keytab的绝对路径，注意一定要写\\而不是\ -->
+        <value>E:\\kafka.keytab</value>
+    </property>
+</configuration>

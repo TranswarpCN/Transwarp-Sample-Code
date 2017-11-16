@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.zookeeper:zookeeper:3.4.5-transwarp">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.5-transwarp/zookeeper-3.4.5-transwarp.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.5-transwarp/zookeeper-3.4.5-transwarp-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.5-transwarp/zookeeper-3.4.5-transwarp-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

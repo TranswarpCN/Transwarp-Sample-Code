@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="test/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>driver_name</name>
+        <value>org.apache.hive.jdbc.HiveDriver</value>
+    </property>
+    <property>
+        <name>mode</name>
+        <value>LDAP</value>
+        <!-- simple, LDAP, kerbeos -->
+    </property>
+    <property>
+        <name>simple_jdbc_url</name>
+        <value>jdbc:hive2://172.16.2.194:10000/default</value>
+    </property>
+    <property>
+        <name>ldap_jdbc_url</name>
+        <value>jdbc:hive2://172.16.2.175:10000/default</value>
+    </property>
+    <property>
+        <name>ldap_name</name>
+        <value>hive</value>
+    </property>
+    <property>
+        <name>ldap_passwd</name>
+        <value>123456</value>
+    </property>
+    <property>
+        <name>kerberos_jdbc_url</name>
+        <value>jdbc:hive2://172.16.2.65:10000/default;principal=hive/CT-1@TDH;kuser=hive;keytab=E://hive.keytab;authentication=kerberos;krb5conf=E://krb5.conf</value>
+    </property>
+    <property>
+        <name>parameter</name>
+        <value>set ngmr.exec.mode=local</value>
+    </property>
+    <property>
+        <name>es_hyperbase_sql</name>
+        <value>select * from ttmp_o_test where contains(txt, "wildcard '*银行*'")</value>
+    </property>
+    <property>
+        <name>esdrive_sql</name>
+        <value>select * from es_table_sql_test where matches(content, 'test')</value>
+    </property>
+    <property>
+        <name>hyperdrive_sql</name>
+        <value>select dt from hbase_index_demo where contains(hphm, "prefix '鲁D528'")</value>
+    </property>
+    <property>
+        <name>thread_pool_size</name>
+        <!-- 线程池大小 -->
+        <value>1</value>
+    </property>
+    <property>
+        <name>thread_num</name>
+        <!-- 线程数量 -->
+        <value>1</value>
+    </property>
+</configuration>

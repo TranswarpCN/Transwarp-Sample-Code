@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="test/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>hbase_table_name</name>
+        <value>picture53</value>
+    </property>
+    <property>
+        <name>region_num</name>
+        <value>4</value>
+    </property>
+    <property>
+        <name>mode</name>
+        <value>simple</value>
+        <!-- simple, kerbeos -->
+    </property>
+    <property>
+        <name>kerberos_with_keytab_user</name>
+        <value>hbase/tdh-24@TDH</value>
+        <!-- 必须按照kerberos用户名/集群hostname@TDH填写 -->
+    </property>
+    <property>
+        <name>kerberos_keytab</name>
+        <value>D:\tanliming\Transwarp-Sample-Code\ObjectStore\src\main\resources\hbase.keytab</value>
+        <!-- 必须写kerberos用户的keytab的绝对路径，
+        如果不填keytab选择kerberos密码，需要去Connector.java中注释30行，取消注释29行 -->
+    </property>
+    <property>
+        <name>kerberos_with_passwd_user</name>
+        <value>hbase</value>
+        <!-- kerberos认证在keytab和密码中至少选择一个 -->
+    </property>
+    <property>
+        <name>kerberos_passwd</name>
+        <value>123456</value>
+    </property>
+    <property>
+        <name>upload_dir</name>
+        <!-- 已包含子文件夹，如多个目录，用 ; 分隔，注意Linux文件夹和Windows文件夹写法的区别 -->
+        <!--<value>/mnt/disk1/p</value>-->
+        <value>D:\tanliming\Transwarp-Sample-Code\ObjectStore\src\main\resources\picture</value>
+    </property>
+    <property>
+        <name>download_dir</name>
+        <value>D:\</value>
+    </property>
+    <property>
+        <name>flush_size</name>
+        <value>134217728</value>
+    </property>
+    <property>
+        <name>thread_pool_size</name>
+        <!-- 线程池大小 -->
+        <value>2</value>
+    </property>
+    <property>
+        <name>thread_num</name>
+        <!-- 线程数量 -->
+        <value>2</value>
+    </property>
+</configuration>

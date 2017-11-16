@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="test/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>current_path</name>
+        <!-- 待将pdf,word转换为txt的文件的文件夹路径，输出格式为完整路径名 | 本文档第几段文本 | 本文档本段文本 -->
+        <value>D:\\星环</value>
+    </property>
+    <property>
+        <name>directory_path</name> <!-- 转化为txt后存放的文件夹路径 -->
+        <value>D:\星环</value>
+    </property>
+    <property>
+        <name>driver_name</name>
+        <value>org.apache.hive.jdbc.HiveDriver</value>
+    </property>
+    <property>
+        <name>mode</name>
+        <value>simple</value>
+        <!-- simple, LDAP, kerbeos -->
+    </property>
+    <property>
+        <name>simple_jdbc_url</name>
+        <value>jdbc:hive2://172.16.2.64:10000/tanliming</value>
+    </property>
+    <property>
+        <name>ldap_jdbc_url</name>
+        <value>jdbc:hive2://172.16.2.93:10000/fulltxt</value>
+    </property>
+    <property>
+        <name>ldap_name</name>
+        <value>hive</value>
+    </property>
+    <property>
+        <name>ldap_passwd</name>
+        <value>123456</value>
+    </property>
+    <property>
+        <name>kerberos_jdbc_url</name>
+        <value>jdbc:hive2://172.16.2.93:10000/fulltxt;principal=hive/CT-1@TDH;kuser=hive;keytab=E://hive.keytab;authentication=kerberos;krb5conf=E://krb5.conf</value>
+    </property>
+    <property>
+        <name>parameter</name>
+        <value>set ngmr.exec.mode = local;</value>
+    </property>
+    <property>
+        <name>create_external_table</name>
+        <value>create external table output_62_3
+            (
+            rowkey string,
+            path string,
+            rownum int,
+            txt string
+            )
+            stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+            with serdeproperties ("hbase.columns.mapping"=":key, c1:path,c1:rownum,c1:txt")
+            tblproperties ("hbase.table.name"="output_62");</value>
+    </property>
+    <property>
+        <name>search_sql</name>
+        <value>select * from output_62 where contains(txt,"wildcard'*数据*'");</value>
+    </property>
+    <property>
+        <name>thread_pool_size</name>
+        <!-- 线程池大小 -->
+        <value>4</value>
+    </property>
+    <property>
+        <name>thread_num</name>
+        <!-- 线程数量 -->
+        <value>1</value>
+    </property>
+</configuration>

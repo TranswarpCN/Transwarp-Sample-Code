@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BatchInsert/BatchInsert.iml" filepath="$PROJECT_DIR$/BatchInsert/BatchInsert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Elasticsearch/Elasticsearch.iml" filepath="$PROJECT_DIR$/Elasticsearch/Elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate/Hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate4/Hibernate4.iml" filepath="$PROJECT_DIR$/Hibernate4/Hibernate4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate5/Hibernate5.iml" filepath="$PROJECT_DIR$/Hibernate5/Hibernate5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDBC_basic/JDBC_basic.iml" filepath="$PROJECT_DIR$/JDBC_basic/JDBC_basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KafkaConsumer/Kafkaconsumer.iml" filepath="$PROJECT_DIR$/KafkaConsumer/Kafkaconsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjectStore/ObjectStore.iml" filepath="$PROJECT_DIR$/ObjectStore/ObjectStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Transwarp-Sample-Code.iml" filepath="$PROJECT_DIR$/.idea/Transwarp-Sample-Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ComplexSearch/complexSearch.iml" filepath="$PROJECT_DIR$/ComplexSearch/complexSearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dfsClient/dfsClient.iml" filepath="$PROJECT_DIR$/dfsClient/dfsClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlumeInterceptor/flumeInterceptor.iml" filepath="$PROJECT_DIR$/FlumeInterceptor/flumeInterceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlumeSink/flumeSink.iml" filepath="$PROJECT_DIR$/FlumeSink/flumeSink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlumeSource/flumesource.iml" filepath="$PROJECT_DIR$/FlumeSource/flumesource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iBatis/iBatis.iml" filepath="$PROJECT_DIR$/iBatis/iBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InceptorUDAF/inceptorudaf.iml" filepath="$PROJECT_DIR$/InceptorUDAF/inceptorudaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InceptorUDF/inceptorudf.iml" filepath="$PROJECT_DIR$/InceptorUDF/inceptorudf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InceptorUDTF/inceptorudtf.iml" filepath="$PROJECT_DIR$/InceptorUDTF/inceptorudtf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KafkaDecoder/kafkaDecoder.iml" filepath="$PROJECT_DIR$/KafkaDecoder/kafkaDecoder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KafkaProducer/kafkaProducer.iml" filepath="$PROJECT_DIR$/KafkaProducer/kafkaProducer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KeywordSearch/keywordSearch.iml" filepath="$PROJECT_DIR$/KeywordSearch/keywordSearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiLocalMode/multiLocalMode.iml" filepath="$PROJECT_DIR$/MultiLocalMode/multiLocalMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rJava/rJava.iml" filepath="$PROJECT_DIR$/rJava/rJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StreamDataCheck/streamDataCheck.iml" filepath="$PROJECT_DIR$/StreamDataCheck/streamDataCheck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebHDFS/webhdfs.iml" filepath="$PROJECT_DIR$/WebHDFS/webhdfs.iml" />
+    </modules>
+  </component>
+</project>

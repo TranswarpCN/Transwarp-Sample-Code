@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hadoop-common-2.7.2-transwarp-5.1.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.7.2-transwarp-5.1.0/hadoop-common-2.7.2-transwarp-5.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

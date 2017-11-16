@@ -1,0 +1,87 @@
+Manifest-Version: 1.0
+Class-Path: common-configuration-1.0-transwarp-5.0.0.jar jackson-core-
+ asl-1.8.8.jar hbase-server-0.98.6-transwarp-5.0.0.jar jamon-runtime-2
+ .3.1.jar hadoop-yarn-api-2.7.2-transwarp-5.0.0.jar jersey-core-1.8.ja
+ r guice-servlet-3.0.jar apacheds-i18n-2.0.0-M15.jar commons-lang3-3.1
+ .jar snappy-java-1.0.4.1.jar java-xmlbuilder-0.4.jar hadoop-yarn-serv
+ er-applicationhistoryservice-2.7.2-transwarp-5.0.0.jar calcite-linq4j
+ -1.6.0-transwarp.jar commons-collections-3.2.1.jar avro-ipc-1.7.1.jar
+  pentaho-aggdesigner-algorithm-5.1.5-jhyde.jar fastutil-6.5.7.jar jet
+ ty-6.1.26.jar commons-daemon-1.0.13.jar hbase-protocol-0.98.6-transwa
+ rp-5.0.0.jar hadoop-yarn-server-common-2.7.2-transwarp-5.0.0.jar libt
+ hrift-0.9.2.jar kryo-2.21.jar hive-exec-0.12.0-transwarp-5.0.0.jar co
+ mmons-net-3.1.jar aopalliance-1.0.jar elasticsearch-client-2.0.0-tran
+ swarp-5.0.0.jar hamcrest-core-1.3.jar icu4j-57.1.jar t-digest-3.0.jar
+  hbase-common-0.98.6-transwarp-5.0.0.jar jodd-core-3.5.2.jar oro-2.0.
+ 8.jar hadoop-annotations-2.7.2-transwarp-5.0.0.jar minlog-1.2.jar sna
+ ppy-0.2.jar parquet-encoding-1.6.0.jar parquet-hadoop-1.6.0.jar calci
+ te-core-1.6.0-transwarp.jar jackson-mapper-asl-1.8.8.jar janino-2.7.6
+ .jar api-util-1.0.0-M20.jar hadoop-client-2.7.2-transwarp-5.0.0.jar c
+ urator-framework-2.8.0.jar ant-1.9.1.jar lucene-join-5.2.1-transwarp-
+ 5.0.0.jar mybatis-3.4.2.jar commons-lang-2.6.jar commons-httpclient-3
+ .1.jar lucene-misc-5.2.1-transwarp-5.0.0.jar hive-shims-common-0.12.0
+ -transwarp-5.0.0.jar javolution-5.5.1.jar apache-log4j-extras-1.2.17.
+ jar opencsv-2.3.jar commons-compress-1.4.1.jar jasper-compiler-5.5.23
+ .jar commons-configuration-1.10.jar eigenbase-properties-1.1.5.jar ha
+ doop-yarn-server-web-proxy-2.7.2-transwarp-5.0.0.jar persistence-raw-
+ dao-1.0-transwarp-5.0.0.jar velocity-1.5.jar spatial4j-0.4.1.jar jers
+ ey-guice-1.9.jar ST4-4.0.4.jar antlr-2.7.7.jar metrics-core-2.2.0.jar
+  hadoop-mapreduce-client-jobclient-2.7.2-transwarp-5.0.0.jar lucene-q
+ ueryparser-5.2.1-transwarp-5.0.0.jar xz-1.0.jar zookeeper-3.4.5-trans
+ warp.jar paranamer-2.3.jar junit-4.11.jar antlr-runtime-3.4.jar lucen
+ e-queries-5.2.1-transwarp-5.0.0.jar lucene-highlighter-5.2.1-transwar
+ p-5.0.0.jar lucene-analyzers-common-5.2.1-transwarp-5.0.0.jar parquet
+ -generator-1.6.0.jar datanucleus-api-jdo-3.2.1.jar javax.servlet-api-
+ 3.0.1.jar compress-lzf-1.0.2.jar commons-codec-1.4.jar guava-14.0.1.j
+ ar hadoop-hdfs-2.7.2-transwarp-5.0.0-tests.jar apacheds-kerberos-code
+ c-2.0.0-M15.jar commons-logging-1.0.4.jar ant-launcher-1.9.1.jar jett
+ y-sslengine-6.1.26.jar jets3t-0.9.0.jar curator-client-2.8.0.jar comm
+ ons-io-2.4.jar stringtemplate-3.2.1.jar httpclient-4.2.5.jar jna-4.2.
+ 1.jar JavaEWAH-0.3.2.jar protobuf-java-2.5.0.jar persistence-core-1.0
+ -transwarp-5.0.0.jar lucene-memory-5.2.1-transwarp-5.0.0.jar commons-
+ math3-3.1.1.jar high-scale-lib-1.1.1.jar hadoop-hdfs-2.7.2-transwarp-
+ 5.0.0.jar jersey-json-1.8.jar jsp-api-2.1-6.1.14.jar hbase-bson-0.98.
+ 6-transwarp-5.0.0.jar commons-pool-1.6.jar jetty-util-6.1.26.jar parq
+ uet-jackson-1.6.0.jar findbugs-annotations-1.3.9-1.jar jsr305-1.3.9.j
+ ar jsch-0.1.42.jar xmlenc-0.52.jar activation-1.1.jar commons-el-1.0.
+ jar hadoop-common-2.7.2-transwarp-5.0.0.jar avro-1.7.1.jar parquet-fo
+ rmat-2.2.0-rc1.jar hadoop-mapreduce-client-jobclient-2.7.2-transwarp-
+ 5.0.0-tests.jar api-asn1-api-1.0.0-M20.jar commons-cli-1.2.jar curato
+ r-recipes-2.8.0.jar jersey-client-1.9.jar libfb303-0.9.2.jar jta-1.1.
+ jar hadoop-auth-2.7.2-transwarp-5.0.0.jar msl-1.0-transwarp-5.0.0.jar
+  jline-2.12.jar xml-apis-1.3.04.jar derby-10.4.2.0.jar jackson-jaxrs-
+ 1.8.8.jar hbase-prefix-tree-0.98.6-transwarp-5.0.0.jar hadoop-mapredu
+ ce-client-core-2.7.2-transwarp-5.0.0.jar jaxb-api-2.2.2.jar parquet-c
+ olumn-1.6.0.jar datanucleus-rdbms-3.2.1.jar lucene-grouping-5.2.1-tra
+ nswarp-5.0.0.jar slf4j-api-1.6.1.jar jdo-api-3.0.1.jar hppc-0.7.1.jar
+  hbase-hadoop2-compat-0.98.6-transwarp-5.0.0.jar hive-shims-scheduler
+ -0.12.0-transwarp-5.0.0.jar jsr166e-1.1.0.jar hive-serde-0.12.0-trans
+ warp-5.0.0.jar hive-common-0.12.0-transwarp-5.0.0.jar commons-compile
+ r-2.7.6.jar xercesImpl-2.9.1.jar asm-3.1.jar hbase-hadoop-compat-0.98
+ .6-transwarp-5.0.0.jar apacheds-jdbm1-2.0.0-M2.jar persistence-dummy-
+ dao-1.0-transwarp-5.0.0.jar htrace-core-3.1.0-incubating.jar jaxb-imp
+ l-2.2.3-1.jar zookeeper-3.4.5-transwarp-tests.jar commons-dbcp-1.4.ja
+ r log4j-1.2.16.jar HdrHistogram-2.1.6.jar hadoop-mapreduce-client-shu
+ ffle-2.7.2-transwarp-5.0.0.jar lucene-backward-codecs-5.2.1-transwarp
+ -5.0.0.jar guice-3.0.jar jasper-runtime-5.5.23.jar lucene-spatial-5.2
+ .1-transwarp-5.0.0.jar servlet-api-2.5.jar netty-all-4.0.23.Final.jar
+  hadoop-yarn-server-resourcemanager-2.7.2-transwarp-5.0.0.jar hadoop-
+ yarn-client-2.7.2-transwarp-5.0.0.jar hadoop-mapreduce-client-app-2.7
+ .2-transwarp-5.0.0.jar common-exception-1.0-transwarp-5.0.0.jar calci
+ te-avatica-1.6.0-transwarp.jar hive-shims-0.23-0.12.0-transwarp-5.0.0
+ .jar lucene-suggest-5.2.1-transwarp-5.0.0.jar lucene-sandbox-5.2.1-tr
+ answarp-5.0.0.jar hadoop-yarn-common-2.7.2-transwarp-5.0.0.jar common
+ s-math-2.1.jar hbase-client-0.98.6-transwarp-5.0.0.jar slf4j-log4j12-
+ 1.6.1.jar parquet-common-1.6.0.jar hive-metastore-0.12.0-transwarp-5.
+ 0.0.jar datanucleus-core-3.2.2.jar javax.inject-1.jar tools.jar netty
+ -3.6.2.Final.jar jsp-2.1-6.1.14.jar jackson-xc-1.7.1.jar bonecp-0.8.0
+ .RELEASE.jar hive-ant-0.12.0-transwarp-5.0.0.jar mysql-connector-java
+ -5.1.36.jar parquet-hadoop-bundle-1.6.0.jar pagehelper-4.1.6.jar hbas
+ e-common-0.98.6-transwarp-5.0.0-tests.jar lucene-core-5.2.1-transwarp
+ -5.0.0.jar groovy-all-2.1.6.jar jsqlparser-0.9.5.jar gson-2.2.4.jar j
+ ettison-1.1.jar leveldbjni-all-1.8.jar httpcore-4.2.4.jar jersey-serv
+ er-1.8.jar json-20090211.jar hadoop-mapreduce-client-common-2.7.2-tra
+ nswarp-5.0.0.jar hive-shims-0.12.0-transwarp-5.0.0.jar avro-mapred-1.
+ 7.1.jar
+Main-Class: io.transwarp.inceptorudf.InceptorUDF
+

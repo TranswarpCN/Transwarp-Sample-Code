@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/BatchInsert/pom.xml" />
+        <option value="$PROJECT_DIR$/ComplexSearch/pom.xml" />
+        <option value="$PROJECT_DIR$/dfsClient/pom.xml" />
+        <option value="$PROJECT_DIR$/Elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/FlumeInterceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/FlumeSink/pom.xml" />
+        <option value="$PROJECT_DIR$/FlumeSource/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate4/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate5/pom.xml" />
+        <option value="$PROJECT_DIR$/iBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/InceptorUDAF/pom.xml" />
+        <option value="$PROJECT_DIR$/InceptorUDF/pom.xml" />
+        <option value="$PROJECT_DIR$/InceptorUDTF/pom.xml" />
+        <option value="$PROJECT_DIR$/KafkaConsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/KafkaDecoder/pom.xml" />
+        <option value="$PROJECT_DIR$/KafkaProducer/pom.xml" />
+        <option value="$PROJECT_DIR$/KeywordSearch/pom.xml" />
+        <option value="$PROJECT_DIR$/MultiLocalMode/pom.xml" />
+        <option value="$PROJECT_DIR$/ObjectStore/pom.xml" />
+        <option value="$PROJECT_DIR$/rJava/pom.xml" />
+        <option value="$PROJECT_DIR$/StreamDataCheck/pom.xml" />
+        <option value="$PROJECT_DIR$/WebHDFS/pom.xml" />
+        <option value="$PROJECT_DIR$/JDBC_basic/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

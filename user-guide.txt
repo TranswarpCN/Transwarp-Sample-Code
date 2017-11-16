@@ -1,0 +1,54 @@
+1、  BatchInsert
+本例演示的是Hyperbase外表的batchinsert。
+配置/conf/setup.xml，运行SampleCode.java的主函数，即可批量插入，支持多线程查询。
+2、  ComplexSearch
+本例演示的是综合搜索。
+配置/resources/setup.xml，配置README.txt中相关前置条件，运行SampleCode.java的主函数，即可进行综合搜索，支持多线程查询。
+3、  dfsClient
+本例演示的是HDFS的客户端操作。
+运行各java，即可运行HDFS的API操作。
+4、  FlumeInterceptor
+本例演示的是Flume的自定义拦截器。
+将本工程打成jar包，上传至集群，按照interceptor.txt中的flume模版，即可实现flume对数据的行过滤、列过滤、正则替换。
+5、  FlumeSink
+本例演示的是Flume自定义Sink。
+将本工程打成jar包，上传至集群，按照sink.txt中的flume模版，即可实现通过flume将文件的本地路径创建至HDFS上。
+6、  Hibernate
+本例演示的是Hibernate对接Inceptor。
+配置README.txt中相关前置条件，运行InHibernate.java，即可完成对接。
+7、  iBatis
+本例演示的是iBatis对接Inceptor。
+配置README.txt中相关前置条件，运行InMybatis.java，即可完成对接。
+8、  KafkaDecoder
+本例演示的是Kafka的Decoder操作。
+将本工程打成jar包，上传至集群，配置README.txt中相关前置条件，即可实现kafka的decoder操作。
+9、  KafkaProducer
+本例演示的是kafka的生产者的相关操作。
+配置/resources/setup.xml，配置README.txt中相关前置条件，运行SampleCode.java，即可实现kafka的生产者的相关操作，支持多线程插入。
+10、 KeywordSearch
+本例演示的是全文搜索。
+配置/resources/setup.xml，配置README.txt中相关前置条件，运行SampleCode.java，即可运行全文搜索，支持多线程查询。
+11、 MultiLocalMode
+本例演示的是Hyperbase的高并发。
+配置/resources/setup.xml，配置README.txt中相关前置条件，运行SampleCode.java，即可运行Hyperbase的高并发操作，支持多线程查询。
+12、 ObjectStore
+本例演示的是Hyperbase的对象存储。
+配置/resources/setup.xml，配置README.txt中相关前置条件，运行UploadData.java与DownloadData.java，即可实现Hyperbase的对象存储，支持多线程存储下载。
+13、 rJava
+本例演示的是通过Scala/Java编写Discover的R语言函数。
+将本工程打成jar包，上传至集群，按照README.txt，即可实现基于Spark自定义Discover函数。
+14、 StreamDataCheck
+本例演示的是基于Hyperbase对流数据实时过滤。
+将本工程打成jar包，上传至集群，按照README.txt，即可实现对流数据的实时过滤。
+15、 Elasticsearch
+本例演示的是通过ES的API的操作。
+16、 FlumeSource
+本例演示的是Flume自定义Source。
+将本工程打成jar包，上传至集群，即可通过flume多线程上传文件。
+17、 KafkaConsumer
+本例演示的是kafka的消费者的相关操作。
+运行SampleCode.java，即可运行kafka消费者的相关操作。
+18、 InceptorUDF/InceptorUDAF/InceptorUDTF
+将工程打成jar包，上传至集群，即可调用inceptor的自定义函数。
+19、 WebHDFS
+本来演示的Web HDFS的Java API操作。

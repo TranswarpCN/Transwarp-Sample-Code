@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="BatchInsert" />
+        <module name="ComplexSearch" />
+        <module name="complexSearch" />
+        <module name="dfsClient" />
+        <module name="elasticsearch" />
+        <module name="Elasticsearch" />
+        <module name="FlumeInterceptor" />
+        <module name="flumeInterceptor" />
+        <module name="flumeSink" />
+        <module name="FlumeSink" />
+        <module name="FlumeSource" />
+        <module name="flumesource" />
+        <module name="Hibernate" />
+        <module name="Hibernate4" />
+        <module name="Hibernate5" />
+        <module name="iBatis" />
+        <module name="InceptorUDAF" />
+        <module name="inceptorudaf" />
+        <module name="inceptorudf" />
+        <module name="InceptorUDF" />
+        <module name="inceptorudtf" />
+        <module name="InceptorUDTF" />
+        <module name="JDBC_basic" />
+        <module name="KafkaConsumer" />
+        <module name="Kafkaconsumer" />
+        <module name="kafkaDecoder" />
+        <module name="KafkaDecoder" />
+        <module name="KafkaProducer" />
+        <module name="kafkaProducer" />
+        <module name="KeywordSearch" />
+        <module name="keywordSearch" />
+        <module name="MultiLocalMode" />
+        <module name="multiLocalMode" />
+        <module name="objectStore" />
+        <module name="ObjectStore" />
+        <module name="rJava" />
+        <module name="streamDataCheck" />
+        <module name="StreamDataCheck" />
+        <module name="webhdfs" />
+        <module name="WebHDFS" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.7">
+      <module name="BatchInsert" target="1.7" />
+      <module name="ComplexSearch" target="1.7" />
+      <module name="complexSearch" target="1.7" />
+      <module name="dfsClient" target="1.7" />
+      <module name="elasticsearch" target="1.7" />
+      <module name="Elasticsearch" target="1.7" />
+      <module name="flumeInterceptor" target="1.7" />
+      <module name="FlumeInterceptor" target="1.7" />
+      <module name="flumeSink" target="1.7" />
+      <module name="FlumeSink" target="1.7" />
+      <module name="flumesource" target="1.7" />
+      <module name="FlumeSource" target="1.7" />
+      <module name="Hibernate" target="1.7" />
+      <module name="Hibernate4" target="1.7" />
+      <module name="Hibernate5" target="1.7" />
+      <module name="iBatis" target="1.7" />
+      <module name="InceptorUDAF" target="1.7" />
+      <module name="inceptorudaf" target="1.7" />
+      <module name="InceptorUDF" target="1.7" />
+      <module name="inceptorudf" target="1.7" />
+      <module name="InceptorUDTF" target="1.7" />
+      <module name="inceptorudtf" target="1.7" />
+      <module name="JDBC_basic" target="1.7" />
+      <module name="Kafkaconsumer" target="1.7" />
+      <module name="KafkaConsumer" target="1.7" />
+      <module name="kafkaDecoder" target="1.7" />
+      <module name="KafkaDecoder" target="1.7" />
+      <module name="KafkaProducer" target="1.7" />
+      <module name="kafkaProducer" target="1.7" />
+      <module name="KeywordSearch" target="1.7" />
+      <module name="keywordSearch" target="1.7" />
+      <module name="multiLocalMode" target="1.7" />
+      <module name="MultiLocalMode" target="1.7" />
+      <module name="objectStore" target="1.7" />
+      <module name="ObjectStore" target="1.7" />
+      <module name="rJava" target="1.7" />
+      <module name="StreamDataCheck" target="1.7" />
+      <module name="streamDataCheck" target="1.7" />
+      <module name="WebHDFS" target="1.7" />
+      <module name="webhdfs" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+
+
+<property>
+    <name>yarn.resourcemanager.ha.enabled</name>
+    <value>true</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.recovery.enabled</name>
+    <value>true</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.store.class</name>
+    <value>org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.zk-address</name>
+    <value>poc-1:2181,poc-2:2181,poc-4:2181</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.ha.automatic-failover.enabled</name>
+    <value>true</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.ha.automatic-failover.embedded</name>
+    <value>true</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.cluster-id</name>
+    <value>yarn1-cluster</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.zk-state-store.parent-path</name>
+    <value>/rmstore-yarn1</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.address.rm1</name>
+    <value>poc-1:8032</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.resource-tracker.address.rm1</name>
+    <value>poc-1:8031</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.scheduler.address.rm1</name>
+    <value>poc-1:8030</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.admin.address.rm1</name>
+    <value>poc-1:8033</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.webapp.address.rm1</name>
+    <value>poc-1:8088</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.ha.id</name>
+    <value>rm1</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.address.rm2</name>
+    <value>poc-2:8032</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.resource-tracker.address.rm2</name>
+    <value>poc-2:8031</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.scheduler.address.rm2</name>
+    <value>poc-2:8030</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.admin.address.rm2</name>
+    <value>poc-2:8033</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.webapp.address.rm2</name>
+    <value>poc-2:8088</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.ha.rm-ids</name>
+    <value>rm1,rm2</value>
+</property>
+
+<property>
+    <name>yarn.log.server.url</name>
+    <value>http://poc-1:19888/jobhistory/logs/</value>
+</property>
+
+<property>
+    <name>yarn.timeline-service.hostname</name>
+    <value>poc-1</value>
+</property>
+<property>
+    <name>yarn.timeline-service.webapp.https.address</name>
+    <value>poc-1:8190</value>
+</property>
+<property>
+    <name>yarn.timeline-service.webapp.address</name>
+    <value>poc-1:8188</value>
+</property>
+
+<property>
+    <name>yarn.resourcemanager.nodes.exclude-path</name>
+    <value>/etc/yarn1/conf/yarn.exclude</value>
+</property>
+<property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>64334</value>
+</property>
+<property>
+    <name>yarn.log-aggregation-enable</name>
+    <value>false</value>
+</property>
+<property>
+    <name>yarn.resourcemanager.scheduler.class</name>
+    <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
+</property>
+<property>
+    <name>yarn.nodemanager.delete.debug-delay-sec</name>
+    <value>86400</value>
+</property>
+<property>
+    <name>yarn.nodemanager.pmem-check-enabled</name>
+    <value>false</value>
+</property>
+<property>
+    <name>yarn.nodemanager.remote-app-log-dir</name>
+    <value>/yarn1/var/log/hadoop-yarn/apps</value>
+</property>
+<property>
+    <name>yarn.nodemanager.log-dirs</name>
+    <value>/vdir/mnt/disk1/hadoop/yarn/logs,/vdir/mnt/disk2/hadoop/yarn/logs,/vdir/mnt/disk3/hadoop/yarn/logs,/vdir/mnt/ssd1/hadoop/yarn/logs</value>
+</property>
+<property>
+    <name>yarn.nodemanager.local-dirs</name>
+    <value>/vdir/mnt/disk1/hadoop/yarn/local,/vdir/mnt/disk2/hadoop/yarn/local,/vdir/mnt/disk3/hadoop/yarn/local,/vdir/mnt/ssd1/hadoop/yarn/local</value>
+</property>
+<property>
+    <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+    <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+</property>
+<property>
+    <name>yarn.scheduler.maximum-allocation-vcores</name>
+    <value>96</value>
+</property>
+<property>
+    <name>yarn.application.classpath</name>
+    <value>/etc/yarn1/conf,/usr/lib/hadoop/*,/usr/lib/hadoop/lib/*,/usr/lib/hadoop-hdfs/*,/usr/lib/hadoop-hdfs/lib/*,/usr/lib/hadoop-yarn/*,/usr/lib/hadoop-yarn/lib/*,/usr/lib/hadoop-mapreduce/*,/usr/lib/hadoop-mapreduce/lib/*</value>
+</property>
+<property>
+    <name>yarn.nodemanager.resource.cpu-vcores</name>
+    <value>24</value>
+</property>
+<property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle</value>
+</property>
+<property>
+    <name>yarn.scheduler.maximum-allocation-mb</name>
+    <value>98304</value>
+</property>
+<property>
+    <name>yarn.nodemanager.vmem-check-enabled</name>
+    <value>false</value>
+</property>
+<property>
+    <name>yarn.nodemanager.webapp.address</name>
+    <value>${yarn.nodemanager.hostname}:8042</value>
+</property>
+</configuration>

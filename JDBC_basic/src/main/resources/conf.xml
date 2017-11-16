@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configuration>
+    <property>
+        <name>driverName</name>
+        <value>org.apache.hive.jdbc.HiveDriver</value>
+    </property>
+    <property>
+        <name>mode</name>
+        <value>simple</value> <!-- simple, ldap, kerberos -->
+    </property>
+    <property>
+        <name>JDBC_URL</name>
+        <value>jdbc:hive2://172.16.2.64:10000/tanliming</value>
+    </property>
+    <property>
+        <name>UserName</name>
+        <value>hive</value>
+    </property>
+    <property>
+        <name>Password</name>
+        <value>123456</value>
+    </property>
+    <property>
+        <name>Kerberos_Parameter</name>
+        <value>principal=hive/CT-1@TDH;kuser=hive;keytab=E://hive.keytab;authentication=kerberos;krb5conf=E://krb5.conf</value>
+    </property>
+    <property>
+        <name>RunSQL</name>
+        <value>drop table table1;create table table1 (c1 int, c2 string) clustered by (c1) into 1 buckets stored as orc tblproperties ("transactional"="true");
+            insert into table1 values(1,'a');insert into table1 values(2,'c');select * from table1</value>
+    </property>
+</configuration>

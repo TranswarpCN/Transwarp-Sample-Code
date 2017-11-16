@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="test/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>local_data_dir</name>
+        <!-- 本地数据文件夹，按；分隔，注意子目录文件也会被添加 -->
+        <value>E:\A</value>
+    </property>
+    <property>
+        <name>hdfs_data_dir</name>
+        <!-- 上传至hdfs目录，最后的 / 一定不要写上 -->
+        <value>/test</value>
+    </property>
+    <property>
+        <name>compression_switcher</name>
+        <!-- 默认false -->
+        <value>false</value>
+    </property>
+    <property>
+        <name>buffer_size</name>
+        <value>1048576</value>
+        <!-- 1024*1024=1048576 -->
+    </property>
+    <property>
+        <name>compression_codec</name>
+        <value>snappy</value>
+    </property>
+    <property>
+        <name>delete_local_data</name>
+        <!-- 是否在本地删除已上传数据 -->
+        <value>false</value>
+    </property>
+    <property>
+        <name>file_type_filter</name>
+        <!-- 后缀名过滤上传文件，符合的进行上传，按，分隔 -->
+        <value>csv,txt</value>
+    </property>
+    <property>
+        <name>thread_pool_size</name>
+        <!-- 线程池大小 -->
+        <value>4</value>
+    </property>
+    <property>
+        <name>thread_num</name>
+        <!-- 线程数量 -->
+        <value>4</value>
+    </property>
+    <property>
+        <name>open_kerberos</name>
+        <!-- 是否开启kerberos -->
+        <value>true</value>
+    </property>
+    <property>
+        <name>kerberos_user</name>
+        <!-- kerberos用户 -->
+        <value>hdfs@TDH</value>
+    </property>
+    <property>
+        <name>keytab</name>
+        <!-- kerberos用户hdfs的keytab的绝对路径，注意一定要写\\而不是\ -->
+        <value>E:\\hdfs.keytab</value>
+    </property>
+</configuration>

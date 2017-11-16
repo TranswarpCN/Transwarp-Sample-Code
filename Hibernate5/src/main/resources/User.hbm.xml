@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!-- 默认表名 与类名一致，也可以通过设置class的table属性来设置表名 -->
+    <class name="User">
+        <id name="id"/>
+        <property name="name"/>
+    </class>
+</hibernate-mapping>

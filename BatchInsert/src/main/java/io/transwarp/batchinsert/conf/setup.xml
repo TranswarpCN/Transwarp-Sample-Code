@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="test/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>driverName</name>
+        <value>org.apache.hive.jdbc.HiveDriver</value>
+    </property>
+    <property>
+        <name>mode</name>
+        <value>simple</value> <!-- simple, LDAP, kerberos -->
+    </property>
+    <property>
+        <name>simpleJdbcUrl</name>
+        <value>jdbc:hive2://172.16.140.101:10000/default</value>
+    </property>
+    <property>
+        <name>LDAPJdbcUrl</name>
+        <value>jdbc:hive2://172.16.2.198:10000/xiaolin</value>
+    </property>
+    <property>
+        <name>LDAPName</name>
+        <value>hive</value>
+    </property>
+    <property>
+        <name>LDAPPasswd</name>
+        <value>123456</value>
+    </property>
+    <property>
+        <name>KerberosJdbcUrl</name>
+        <value>jdbc:hive2://172.16.140.101:10000/default;principal=hive/tdh-101@TDH;kuser=hive;keytab=D://inceptor.keytab;authentication=kerberos;krb5conf=D://krb5.conf</value>
+    </property>
+    <property>
+        <name>Parameter</name>
+        <value></value>
+    </property>
+    
+    <property>
+        <name>run_base_select_demo_or_not</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>base_select_demo</name>
+        <value>drop table table1;CREATE TABLE table1 (c1 int, c2 string) CLUSTERED BY (c1) INTO 2 BUCKETS STORED AS ORC TBLPROPERTIES ("transactional"="true");
+            insert into table1 values(1,'a');insert into table1 values(2,'c');select c1, c2 from table1</value>
+    </property>
+    <property>
+        <name>run_test_HBase_batchinsert_with_struct-rowKey_demo_or_not</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>test_HBase_batchinsert_with_struct-rowKey_demo</name>
+        <!-- 由于xml原因，先将<替换为@，>替换为#，然后在程序中接着替换-->
+        <value>drop table if exists batchinsertwithstructrowkey;create table if not exists batchinsertwithstructrowkey (key struct@c2:int,c1:int# ,c0 string, c1 int,c2 int) stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler';insert into batchinsertwithstructrowkey(c0, c1, c2) values(?,?,?)
+        </value>
+    </property>
+    <property>
+        <name>run_test_HBase_batchinsert_without_struct-rowKey_demo_or_not</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>test_HBase_batchinsert_without_struct-rowKey_demo</name>
+        <value>drop table if exists batchinsertwithoutstructrowkey;create table if not exists batchinsertwithoutstructrowkey (c1 int,c2 int) stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler';insert into batchinsertwithoutstructrowkey(c1, c2) values(?,?)</value>
+    </property>
+    <property>
+        <name>run_plsql_hint_or_not</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>plsql_hint</name>
+        <value>!set plsqlUseSlash true</value>
+    </property>
+    <property>
+        <name>plsql_demo_create_procedure</name>
+        <value>CREATE OR REPLACE PROCEDURE hello_world() IS l_message STRING := 'Hello World!' BEGIN DBMS_OUTPUT.put_line (l_message) END;</value>
+    </property>
+    <property>
+        <name>plsql_demo_run</name>
+        <value>BEGIN hello_world();END;</value>
+    </property>
+    <property>
+        <name>run_hyperdrive_demo_or_not</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>hyperdrive_demo</name>
+        <value>set ngmr.exec.mode=local;drop table hbase_index_demo;CREATE TABLE hbase_index_demo(key INT, dt INT, hphm STRING) STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+            WITH SERDEPROPERTIES ('hbase.columns.mapping'=':key#b,dt:int#b,cf:val');
+            CREATE FULLTEXT INDEX ON hbase_index_demo(dt,hphm) SHARD NUM 1;
+            SELECT dt FROM hbase_index_demo WHERE CONTAINS(hphm, "prefix '鲁D528'")
+        </value>
+    </property>
+    
+    <property>
+        <name>nThreads</name> <!-- 线程数量 -->
+        <value>1</value>
+    </property>
+    <property>
+        <name>nTimes</name> <!-- 执行循环次数 -->
+        <value>1</value>
+    </property>
+</configuration>

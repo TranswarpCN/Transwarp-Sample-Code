@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.calcite:calcite-core:1.6.0-transwarp">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/calcite/calcite-core/1.6.0-transwarp/calcite-core-1.6.0-transwarp.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/calcite/calcite-core/1.6.0-transwarp/calcite-core-1.6.0-transwarp-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/calcite/calcite-core/1.6.0-transwarp/calcite-core-1.6.0-transwarp-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

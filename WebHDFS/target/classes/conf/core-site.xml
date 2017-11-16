@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+<property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://nameservice1</value>
+</property>
+<property>
+    <name>ha.zookeeper.quorum</name>
+    <value>tdh-24:2181,tdh-25:2181,tdh-26:2181</value>
+</property>
+<property>
+    <name>ha.zookeeper.parent-znode</name>
+    <value>/hdfs1-ha</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hbase.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hbase.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hive.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hive.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hue.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hue.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.httpfs.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.httpfs.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.oozie.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.oozie.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.guardian.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.guardian.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.root.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.root.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>net.topology.node.switch.mapping.impl</name>
+    <value>org.apache.hadoop.net.ScriptBasedMapping</value>
+</property>
+<property>
+    <name>net.topology.script.file.name</name>
+    <value>/usr/lib/transwarp/scripts/rack_map.sh</value>
+</property>
+<property>
+    <name>transwarp.docker.network.interfaces</name>
+    <value>eth0</value>
+</property>
+<property>
+    <name>ha.zookeeper.parent-znode</name>
+    <value>/hdfs1-ha</value>
+</property>
+<property>
+    <name>transwarp.docker.enable</name>
+    <value>true</value>
+</property>
+<property>
+    <name>dfs.ha.fencing.methods</name>
+    <value>shell(/bin/true)</value>
+</property>
+<property>
+    <name>transwarp.docker.network.policy</name>
+    <value>io.transwarp.docker.DockerNetworkPolicyHostGW</value>
+</property>
+<property>
+    <name>fs.trash.interval</name>
+    <value>1440</value>
+</property>
+<property>
+    <name>transwarp.docker.network.hypervisor-subnetmask</name>
+    <value>255.255.255.255</value>
+</property>
+</configuration>

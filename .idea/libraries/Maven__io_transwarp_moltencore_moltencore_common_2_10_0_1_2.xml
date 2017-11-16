@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.transwarp.moltencore:moltencore-common_2.10:0.1.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/transwarp/moltencore/moltencore-common_2.10/0.1.2/moltencore-common_2.10-0.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/io/transwarp/moltencore/moltencore-common_2.10/0.1.2/moltencore-common_2.10-0.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/transwarp/moltencore/moltencore-common_2.10/0.1.2/moltencore-common_2.10-0.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

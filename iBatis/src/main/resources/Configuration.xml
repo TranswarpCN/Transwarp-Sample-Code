@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="org.apache.hive.jdbc.HiveDriver"/>
+                <property name="url" value="jdbc:hive2://172.16.1.198:10000/xiaolin?transaction.type=inceptor"/>
+                <!--<property name="url" value="jdbc:hive2://172.16.2.98:10000/default;principal=hive/transwarp-9@TDH;kuser=hive;keytab=E://hive.keytab;authentication=kerberos;krb5conf=E://krb5.conf"/>-->
+                <property name="username" value="hive"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="User.xml"/>
+    </mappers>
+</configuration>

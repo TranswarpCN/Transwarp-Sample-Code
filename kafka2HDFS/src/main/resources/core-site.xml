@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+<property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://nameservice1</value>
+</property>
+<property>
+    <name>ha.zookeeper.quorum</name>
+    <value>tdh-81:2181,tdh-82:2181,tdh-83:2181</value>
+</property>
+<property>
+    <name>ha.zookeeper.parent-znode</name>
+    <value>/hdfs1-ha</value>
+</property>
+<property>
+    <name>hadoop.security.authentication</name>
+    <value>kerberos</value>
+</property>
+<property>
+    <name>hadoop.security.authorization</name>
+    <value>true</value>
+</property>
+<property>
+    <name>hadoop.http.filter.initializers</name>
+    <value>org.apache.hadoop.security.AuthenticationFilterInitializer</value>
+</property>
+<property>
+    <name>hadoop.http.authentication.simple.anonymous.allowed</name>
+    <value>true</value>
+</property>
+<property>
+    <name>hadoop.http.authentication.kerberos.principal</name>
+    <value>HTTP/tdh-81@TDH</value>
+</property>
+<property>
+    <name>hadoop.http.authentication.kerberos.keytab</name>
+    <value>/etc/hdfs1/conf/hdfs.keytab</value>
+</property>
+<property>
+    <name>hadoop.http.authentication.signature.secret.file</name>
+    <value>/etc/hadoop-http-auth-signature-secret</value>
+</property>
+<property>
+</property>
+<property>
+    <name>hadoop.security.group.mapping.ldap.bind.user</name>
+    <value>uid=admin,ou=system</value>
+</property>
+<property>
+    <name>hadoop.security.group.mapping.ldap.bind.password.file</name>
+    <value>/etc/hdfs1/conf/ldap-conn-pass.txt</value>
+</property>
+<property>
+    <name>hadoop.security.group.mapping.ldap.url</name>
+    <value>ldap://tdh-82:10389 ldap://tdh-83:10389</value>
+</property>
+<property>
+    <name>hadoop.security.group.mapping.ldap.base</name>
+    <value>dc=tdh</value>
+</property>
+<property>
+    <name>hadoop.security.group.mapping.ldap.search.filter.user</name>
+    <value>(&amp;(objectClass=inetOrgPerson)(uid={0}))</value>
+</property>
+<property>
+    <name>hadoop.security.group.mapping.ldap.search.filter.group</name>
+    <value>(objectClass=configGroup)</value>
+</property>
+<property>
+    <name>hadoop.security.group.mapping.ldap.search.attr.member</name>
+    <value>member</value>
+</property>
+<property>
+    <name>hadoop.security.group.mapping.ldap.search.attr.group.name</name>
+    <value>cn</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hbase.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hbase.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hive.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hive.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hue.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hue.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.httpfs.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.httpfs.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.oozie.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.oozie.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.guardian.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.guardian.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.root.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.root.groups</name>
+    <value>*</value>
+</property>
+<property>
+    <name>net.topology.node.switch.mapping.impl</name>
+    <value>org.apache.hadoop.net.ScriptBasedMapping</value>
+</property>
+<property>
+    <name>net.topology.script.file.name</name>
+    <value>/usr/lib/transwarp/scripts/rack_map.sh</value>
+</property>
+<property>
+    <name>transwarp.docker.network.interfaces</name>
+    <value>eth0</value>
+</property>
+<property>
+    <name>ha.zookeeper.parent-znode</name>
+    <value>/hdfs1-ha</value>
+</property>
+<property>
+    <name>transwarp.docker.enable</name>
+    <value>true</value>
+</property>
+<property>
+    <name>dfs.ha.fencing.methods</name>
+    <value>shell(/bin/true)</value>
+</property>
+<property>
+    <name>transwarp.docker.network.policy</name>
+    <value>io.transwarp.docker.DockerNetworkPolicyHostGW</value>
+</property>
+<property>
+    <name>fs.trash.interval</name>
+    <value>1440</value>
+</property>
+<property>
+    <name>transwarp.docker.network.hypervisor-subnetmask</name>
+    <value>255.255.255.255</value>
+</property>
+</configuration>

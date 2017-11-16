@@ -1,0 +1,69 @@
+Manifest-Version: 1.0
+Class-Path: hadoop-mapreduce-client-app-2.7.2-transwarp-5.0.0.jar minl
+ og-1.2.jar jetty-webapp-8.1.14.v20131031.jar jetty-continuation-8.1.1
+ 4.v20131031.jar parquet-jackson-1.7.0.jar apacheds-i18n-2.0.0-M15.jar
+  json4s-native_2.10-3.2.10.jar javax.mail-1.5.2.jar breeze-macros_2.1
+ 0-0.11.2.jar jsch-0.1.42.jar commons-beanutils-1.7.0.jar jetty-http-8
+ .1.14.v20131031.jar jackson-jaxrs-1.9.13.jar parquet-common-1.7.0.jar
+  metrics-jvm-3.0.0.jar junit-4.8.2.jar chill-java-0.3.6.jar hadoop-ya
+ rn-server-common-2.7.2-transwarp-5.0.0.jar json4s-ast_2.10-3.2.10.jar
+  spark-mllib-local_2.10-1.1.0-transwarp-5.0.0.jar pyrolite-2.0.1.jar 
+ stax-api-1.0-2.jar moltencore-common_2.10-0.1.2.jar gson-2.2.4.jar je
+ tty-security-8.1.14.v20131031.jar jackson-databind-2.3.1.jar jna-4.2.
+ 1.jar hadoop-annotations-2.7.2-transwarp-5.0.0.jar commons-logging-1.
+ 1.3.jar httpcore-4.2.4.jar jersey-core-1.9.jar commons-httpclient-3.1
+ .jar lz4-1.2.0.jar api-util-1.0.0-M20.jar snappy-java-1.0.5.3.jar jav
+ ax.mail.glassfish-1.4.1.v201005082020.jar janino-2.7.8.jar jackson-co
+ re-2.3.1.jar jetty-io-8.1.14.v20131031.jar slf4j-log4j12-1.7.5.jar av
+ ro-1.7.4.jar hadoop-common-2.7.2-transwarp-5.0.0.jar opencsv-2.3.jar 
+ commons-compress-1.4.1.jar colt-1.2.0.jar spark-stargate_2.10-1.1.0-t
+ ranswarp-5.0.0.jar netty-3.6.6.Final.jar curator-framework-2.4.0.jar 
+ apacheds-jdbm1-2.0.0-M2.jar api-asn1-api-1.0.0-M20.jar tachyon-0.5.0.
+ jar jetty-server-8.1.14.v20131031.jar hadoop-client-2.7.2-transwarp-5
+ .0.0.jar json4s-core_2.10-3.2.10.jar protobuf-java-2.4.1-shaded.jar c
+ urator-client-2.4.0.jar jackson-core-asl-1.9.13.jar xz-1.0.jar zookee
+ per-3.4.5-transwarp.jar scala-library-2.10.4.jar spark-sql_2.10-1.1.0
+ -transwarp-5.0.0.jar jackson-module-scala_2.10-2.3.1.jar activation-1
+ .1.1.jar commons-email-1.4.jar commons-digester-1.8.jar javax.servlet
+ -api-3.0.1.jar stream-2.7.0.jar slf4j-api-1.7.5.jar parquet-format-2.
+ 3.0-incubating.jar apacheds-kerberos-codec-2.0.0-M15.jar py4j-0.8.2.1
+ .jar htrace-core-3.1.0-incubating.jar config-1.0.2.jar commons-math3-
+ 3.4.1.jar akka-remote_2.10-2.2.3-transwarp-shaded-protobuf.jar spark-
+ core_2.10-1.1.0-transwarp-5.0.0.jar spark-streaming_2.10-1.1.0-transw
+ arp-5.0.0.jar commons-io-2.4.jar httpclient-4.2.5.jar quasiquotes_2.1
+ 0-2.0.0-M8.jar protobuf-java-2.5.0.jar commons-collections-3.2.2.jar 
+ hadoop-hdfs-2.7.2-transwarp-5.0.0.jar spire-macros_2.10-0.7.4.jar met
+ rics-json-3.0.0.jar hadoop-yarn-api-2.7.2-transwarp-5.0.0.jar fastuti
+ l-6.4.4.jar concurrent-1.3.4.jar arpack_combined_all-0.1.jar jetty-ut
+ il-6.1.26.jar hadoop-mapreduce-client-common-2.7.2-transwarp-5.0.0.ja
+ r jsr305-1.3.9.jar metrics-core-3.0.0.jar xmlenc-0.52.jar reflectasm-
+ 1.07-shaded.jar kryo-2.21.jar tachyon-client-0.5.0.jar parquet-hadoop
+ -1.7.0.jar chill_2.10-0.3.6.jar spark-graphx_2.10-1.1.0-transwarp-5.0
+ .0.jar mesos-0.18.1-shaded-protobuf.jar commons-cli-1.2.jar jersey-cl
+ ient-1.9.jar uncommons-maths-1.2.2a.jar jsp-api-2.1.jar hadoop-auth-2
+ .7.2-transwarp-5.0.0.jar hadoop-mapreduce-client-shuffle-2.7.2-transw
+ arp-5.0.0.jar jul-to-slf4j-1.7.5.jar netty-all-4.1.5.transwarp.jar co
+ mmons-lang3-3.3.2.jar breeze_2.10-0.11.2.jar jaxb-api-2.2.2.jar alert
+ 4j-0.1.jar objenesis-1.2.jar log4j-1.2.17.jar jets3t-0.7.1.jar compre
+ ss-lzf-1.0.0.jar antlr4-runtime-4.5.2-1.jar jetty-util-8.1.14.v201310
+ 31.jar xercesImpl-2.9.1.jar univocity-parsers-2.1.1.jar spark-holodes
+ k_2.10-1.1.0-transwarp-5.0.0.jar jackson-mapper-asl-1.9.13.jar common
+ s-beanutils-core-1.8.0.jar jetty-plus-8.1.14.v20131031.jar jackson-xc
+ -1.9.13.jar commons-codec-1.3.jar metrics-graphite-3.0.0.jar jtransfo
+ rms-2.4.0.jar parquet-generator-1.7.0.jar jetty-xml-8.1.14.v20131031.
+ jar hadoop-yarn-client-2.7.2-transwarp-5.0.0.jar xml-apis-1.3.04.jar 
+ paranamer-2.6.jar json4s-jackson_2.10-3.2.10.jar commons-lang-2.6.jar
+  spire_2.10-0.7.4.jar scalap-2.10.0.jar pmml-schema-1.2.15.jar leveld
+ bjni-all-1.8.jar spark-mllib_2.10-1.1.0-transwarp-5.0.0.jar xbean-asm
+ 5-shaded-4.4.jar commons-net-2.2.jar hadoop-yarn-common-2.7.2-transwa
+ rp-5.0.0.jar messagehandler-1.1.1-SNAPSHOT.jar akka-actor_2.10-2.2.3-
+ shaded-protobuf.jar hadoop-mapreduce-client-jobclient-2.7.2-transwarp
+ -5.0.0.jar curator-recipes-2.4.0.jar pmml-model-1.2.15.jar guava-14.0
+ .1.jar hadoop-mapreduce-client-core-2.7.2-transwarp-5.0.0.jar jetty-j
+ ndi-8.1.14.v20131031.jar commons-compiler-2.7.8.jar jetty-servlet-9.2
+ .16.v20160414.jar akka-slf4j_2.10-2.2.3-shaded-protobuf.jar parquet-c
+ olumn-1.7.0.jar core-1.1.2.jar jackson-annotations-2.3.0.jar scala-re
+ flect-2.10.4.jar parquet-encoding-1.7.0.jar spark-catalyst_2.10-1.1.0
+ -transwarp-5.0.0.jar commons-configuration-1.6.jar jcl-over-slf4j-1.7
+ .5.jar
+

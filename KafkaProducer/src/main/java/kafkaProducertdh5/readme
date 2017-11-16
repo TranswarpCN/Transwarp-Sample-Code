@@ -1,0 +1,27 @@
+TDH5.0采用了kafka0.82,支持了新版的api，老版本的api可用但是新版本的包不会适配安全部分，如果要使用安全需要采用新版api
+
+Kafka-0.10的broker实现了创建、删除topic的接口并且有完整的权限检查。通过在server.properties中将zookeeper.set.acl设置为true，zookeeper中所有kafka server创建的znode都将只有kafka server有写权限，普通用户无法通过kafka-topics.sh脚本直接与zookeeper通信进行topic的创建和删除。我们新加一个脚本kafka-broker-topics.sh以及对应的BrokerTopicCommand.scala用来向broker发送创建、删除topic的请求。
+首先需要正确配置consumer的SASL认证。添加名为kafka-client/hostname@TDH的principal并为其生成keytab。在consumer.properties中添加以下属性：
+security.protocol=SASL_PLAINTEXT
+sasl.mechanism=GSSAPI
+sasl.kerberos.service.name=kafka
+ 
+sasl.jaas.config=com.sun.security.auth.module.Krb5LoginModule required \
+     useKeyTab=true \
+     storeKey=true \
+     keyTab="/etc/security/keytabs/kafka_client.keytab" \
+     principal="kafka-client/tw-node1232@TDH";
+
+
+添加一个topic可用以下命令（在Kafka根目录下）：
+bin/kafka-broker-topics.sh --bootstrap-server tw-node1232:9092 --create --topic test-topic0 --partitions 3 --replication-factor 1 --consumer.config config/consumer.properties
+删除一个topic可使用以下命令：
+bin/kafka-broker-topics.sh --bootstrap-server tw-node1232:9092 --delete --topic test-topic0 --consumer.config config/consumer.properties
+这两个命令会返回创建/删除是否成功的结果，如果失败则会显示失败原因。
+ 
+生产：
+/usr/lib/kafka/bin/kafka-console-producer.sh --topic test_streamingsql --broker-list tw-node3125:9092 --producer.config producer.properties
+ 
+ 
+消费
+/usr/lib/kafka/bin/kafka-console-consumer.sh --topic test_streamingsql --bootstrap-server tw-node3125:9092 --from-beginning --consumer.config consumer.properties
