@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.transwarp</groupId>
+    <artifactId>HbaseThriftDemo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <hbase.version>1.3.1-transwarp-6.0.0</hbase.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-common</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-protocol</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-procedure</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-hadoop-compat</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>hbase-server</artifactId>
+            <groupId>org.apache.hbase</groupId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>hbase-shell</artifactId>
+            <groupId>org.apache.hbase</groupId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>hbase-thrift</artifactId>
+            <groupId>org.apache.hbase</groupId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>hbase-rest</artifactId>
+            <groupId>org.apache.hbase</groupId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>hbase-client</artifactId>
+            <groupId>org.apache.hbase</groupId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.thrift</groupId>
+            <artifactId>libthrift</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

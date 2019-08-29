@@ -1,0 +1,8 @@
+编译:
+
+mvn clean package
+
+注意:
+pom.xml下的hbase.version
+TDH 6.0.X   ---->   <hbase.version>1.3.1-transwarp-6.0.0</hbase.version>
+TDH 5.2.X   ---->   <hbase.version>0.98.6-transwarp-5.2.3</hbase.version>
