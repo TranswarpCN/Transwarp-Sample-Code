@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="io.transwarp.kundb.demo.Mapper.XuserMapper" >
+    <resultMap id="BaseResultMap" type="io.transwarp.kundb.demo.entity.Xuser" >
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="age" property="age" jdbcType="BIGINT" />
+        <result column="is_delete" property="isDelete" jdbcType="BIGINT" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+     
+    <sql id="Base_Column_List" >
+        id, name, age, is_delete, update_time
+    </sql>
+
+    <select id="getAll" resultMap="BaseResultMap"  >
+       SELECT
+       <include refid="Base_Column_List" />
+       FROM xuser
+    </select>
+
+    <select id="getOne" parameterType="java.lang.Long" resultMap="BaseResultMap" >
+        SELECT
+       <include refid="Base_Column_List" />
+       FROM xuser
+       WHERE id = #{id}
+    </select>
+ 
+    <update id="update" parameterType="io.transwarp.kundb.demo.entity.Xuser">
+       update xuser
+       <trim prefix="set" suffixOverrides=",">
+--         <if test="name != null">name=#{name},</if>
+        <if test="age != null">age=#{age},</if>
+        </trim>
+         where id=#{id}
+    </update>
+
+    <insert id="insert" parameterType="io.transwarp.kundb.demo.entity.Xuser">
+       INSERT INTO
+            xuser
+            (id,name,age,update_time)
+        VALUES
+            (#{id}, #{name}, #{age}, current_timestamp )
+    </insert>
+     
+    <update id="delete" parameterType="java.lang.Long" >
+       update xuser set is_delete=1
+       WHERE
+             id =#{id}
+    </update>
+ 
+</mapper>

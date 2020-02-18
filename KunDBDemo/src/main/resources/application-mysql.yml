@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:kundb://vt_app:123@172.16.2.241:15991/kundb1?useSSL=true&trustAllCA=true
+    username: vt_app
+    password: 123
+    driver-class-name: io.transwarp.kundb.jdbc.KundbDriver

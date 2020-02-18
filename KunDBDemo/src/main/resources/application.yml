@@ -1,0 +1,25 @@
+server:
+  port: 9999
+spring:
+  profiles:
+    active: kundb
+  datasource:
+    type: org.apache.commons.dbcp2.BasicDataSource
+#    type: org.apache.tomcat.jdbc.pool.DataSource
+#    type: com.alibaba.druid.pool.DruidDataSource
+    dbcp2: #启用dbcp2配置
+      min-idle: 5 #最小空闲连接:连接池中容许保持空闲状态的最小连接数量,
+      initial-size: 5 #初始化连接数量
+      max-total: 50
+      max-wait-millis: 200
+    druid:
+      initial-size: 3
+      min-idle: 3
+      max-active: 10
+      max-wait: 200
+#  jpa:
+#    hibernate:
+#      dialect: org.hibernate.dialect.MySQL5Dialect
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+    
